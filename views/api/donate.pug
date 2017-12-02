@@ -1,0 +1,36 @@
+extends ../layout
+
+block content
+  h2 Milk Donations
+  hr
+
+  form(classname='form', onsubmit='{this.handleSubmit}')
+    button(classname='button', type='submit') Schedule a Drop Off
+    |     
+    br
+    br
+    br
+    br
+    |     
+    label Amount of milk (in ounces) being donated:&nbsp;&nbsp;
+    |     
+    select(amount='{this.state.value}', onchange='{this.handleChange}')
+      option(value='0-100') 0 - 100
+      |             
+      option(value='101-150') 101 - 150
+      |             
+      option(value='151-200') 151 - 200
+      |             
+      option(value='201-250') 201 - 250
+      |             
+      option(value='over250') over 250
+    |     
+    br
+    br
+    br
+    br
+    |     
+    button(classname='button', type='submit') Confirm Dropoff
+
+
+  
