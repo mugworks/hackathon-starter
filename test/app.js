@@ -40,7 +40,13 @@ describe('GET /contact', () => {
       .expect(200, done);
   });
 });
-
+describe('GET /locations', () => {
+  it('should return 200 OK', (done) => {
+    request(app)
+      .get('/locations')
+      .expect(200, done);
+  });
+});
 describe('GET /random-url', () => {
   it('should return 404', (done) => {
     request(app)
