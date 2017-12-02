@@ -29,8 +29,8 @@ foursquare.Users = bluebird.promisifyAll(foursquare.Users);
  * List of API examples.
  */
 exports.getApi = (req, res) => {
-  res.render('api/index', {
-    title: 'API Examples'
+  res.render('api/donate', {
+    title: 'Milk'
   });
 };
 
