@@ -34,6 +34,7 @@ const homeController = require('./controllers/home');
 const userController = require('./controllers/user');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
+const locationsController = require('./controllers/locations')
 
 /**
  * API keys and Passport configuration.
@@ -140,6 +141,7 @@ app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userControl
  * API examples routes.
  */
 app.get('/api', apiController.getApi);
+
 // app.get('/api/lastfm', apiController.getLastfm);
 // app.get('/api/nyt', apiController.getNewYorkTimes);
 // app.get('/api/aviary', apiController.getAviary);
@@ -168,6 +170,7 @@ app.get('/api', apiController.getApi);
 // app.get('/api/pinterest', passportConfig.isAuthenticated, passportConfig.isAuthorized, apiController.getPinterest);
 // app.post('/api/pinterest', passportConfig.isAuthenticated, passportConfig.isAuthorized, apiController.postPinterest);
 // app.get('/api/google-maps', apiController.getGoogleMaps);
+
 
 /**
  * OAuth authentication routes. (Sign in)
