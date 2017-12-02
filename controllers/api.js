@@ -621,6 +621,6 @@ exports.postPinterest = (req, res, next) => {
 
 exports.getGoogleMaps = (req, res) => {
   res.render('api/locations', {
-    title: 'Google Maps API'
+    title: 'Drop-off Locations'
   });
 };

@@ -7,8 +7,10 @@ block content
   div
     .row
       .col-sm-6
-        button(class="btn btn-primary") Schedule Drop-off
+        form(action="/locations", method="get")
+          button(class="btn btn-primary") Schedule Drop-off
   div
     .row
       .col-sm-6
-        button(class="btn btn-primary") Drop-off Check-in
+        form(action="/api", method="get")
+          button(class="btn btn-primary") Drop-off Check-in
